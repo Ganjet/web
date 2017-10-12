@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 50%;
+    margin: 0 auto;
+  
+}
+
+body{
+    margin: 0px;
+}
+.divup{
+    height: 200px;
+    width: 100%;
+}
+.Languages{
+   float: left;
+   
+}
+.Programing{
+
+    float: left;
+    padding-left: 0px;
+}
+.logo {
+
+    float: left;
+}
+.name {
+    float: left;
+    margin-left: 100px;
+}
+
+.info{
+    margin-top: 30px;
+    float: left;
+margin-left: 100px;
+}
+
+.Programing ul {
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+
+.skill {
+
+    float: left;
+width: 200px;
+}
+
+.helloo{
+margin-left: 200px;
+}
+
+
+.hel{
+    float: left;
+   width: 200px;
+}
+
+.education{
+    clear: both;
+
+}
+.Edu{
+    float: left;
+    width: 200px;
+}
+.school{
+    margin-left: 200px;
+
+}
+
+
+.work {
+    float: left;
+    width: 200px;
+}
+.text{
+  margin-left: 200px;
+}
+
+.text p:first-child{
+    margin-top: 0px;
+}
+.int{
+    width: 200px;
+    float: left;
+}
+.trav{
+margin-left: 200px;
+}

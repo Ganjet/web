@@ -1,0 +1,20 @@
+git clone URL
+git init
+Перед началом использования репозитория вы должны его инициализировать командой 
+git add - дадоди файл
+git add -A
+
+git status
+git commit -m "name file"
+:wq
+
+git push загрузка файл на сайт
+
+git pull - докачка файлів на інший комп обновка
+
+
+git rm удалити
+(git commit -m "name file"
+:wq
+
+git push загрузка файл на сайт)

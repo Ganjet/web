@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div class="divup">
+        <div class="logo">
+            <span><img src="logo.jpg" width="200px" height="200px" alt=""></span>
+        </div>
+        <div class="name" style="text-align:center;">
+            <p><h1>Andrii Boichuk</h1></p>
+            <p><h2>Web developer</h2></p><br>
+
+        </div>
+        <div class="info">
+            <p>Stationsplein, 1012 AB <br>
+                Amsterdam, The Netherlands <br>
+                info@email.com <br>
+                +4 8 15 16 23 42 <br></p>
+        </div>
+    </div>
+    <div class="hello">
+        <div class="hel"><h2>Hello</h2></div>
+        <div class="helloo">
+          <p>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." 
+                <br>Antoine de Saint-Exupery</p> </div>
+    </div>
+    
+    <div class="education">
+        <div class="Edu"><h2>Education</h2></div>
+        <div class="school">
+            <p><h4>School</h4></p>
+            <p>1943-2008</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.
+               
+                <p><h4>University</h4></p>
+            <p>2008-2008</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.
+               
+                <p><h4>Second University</h4></p>
+            <p>2008-2010</p>
+            <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.</p>
+        </div>
+    </div>
+    <div class="works">
+        <div class="work"><h2>Work Experience</h2></div>
+        <div class="text">
+            <p><h4>First Jobh</h4></p> 
+            
+           <p>1960-2008</p> 
+            
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.
+            </p> 
+            <p><h4>Second Job</h4></p> 
+            
+             <p>2008-2013</p>
+            
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua.</p> </div>
+    </div>
+    <div class="interest">
+        <div class="int">
+            <p><h2>Interests</h2></p>
+        </div>
+        <div class="trav">
+            <p><h4>Traveling</h4></p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua</p>
+            <p><h4>Reading</h4></p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua
+                </p>
+                <p><h4>Books</h4></p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua</p>
+        </div>
+    </div>
+    <div class="skills">
+            <div class="skill"><h2>Skills</h2></div>
+            <div class="skkk">
+                <div class="Programing">
+                <ul>Programing
+                    <li>css - 3 years experience</li>
+                    <li>html - Lorem ipsum dolor sit amet</li>
+                    <li>php - Lorem ipsum dolor sit amet</li>
+                    <li>javascript - Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+            <div class="Languages">  
+                <ul>Languages
+                    <li>English - Fluent</li>
+                    <li>Russian - Fluent in writing</li>
+                    <li>Spanish - Lorem ipsum dolor sit amet</li>
+                    <li>Esperanto - Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</div>
+
+</body>
+</html>
