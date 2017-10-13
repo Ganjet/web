@@ -1,0 +1,32 @@
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted black;
+    
+}
+.table{
+    height: 200px;    
+}
+.left{
+    float: left;
+    width: 50%;
+    height: 138px;
+}
+.right{
+    margin-right: 0px;
+    margin-left: 311px;
+    height: 138px;
+}
+
+.right1{
+    width: 50%;
+    height: 56px;
+float: left;
+}
+.right2{
+    margin-left: 150px;
+}
+.leftDown{
+    float: left;
+    width: 50%;
+}
