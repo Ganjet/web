@@ -1,0 +1,14 @@
+ margin:auto; - вирівнювання по центру
+
+
+
+ .main { - 			для fixed
+    width: 50px;
+    background-color:tomato;
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    
+}

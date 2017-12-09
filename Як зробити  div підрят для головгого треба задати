@@ -1,0 +1,15 @@
+Як зробити  div підрят для головгого треба задати цей код
+
+
+.main::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+
+або створити ще одни div в кінці загального і додати йому такий стиль
+<!-- <div style="clear:both"></div> -->
+
+    
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
