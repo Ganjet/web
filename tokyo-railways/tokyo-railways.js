@@ -12,7 +12,7 @@ This demo gives examples of
 
 $(function () {
 
-  // get exported json from cytoscape desktop via ajax
+  // // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({
     url: 'raw.json', // tokyo-railways.json
     type: 'GET',
@@ -31,10 +31,11 @@ $(function () {
 
   // when both graph export json and style loaded, init cy
   Promise.all([graphP, styleP]).then(initCy);
+  // Promise.all([styleP]).then(initCy);
 
   function initCy(then) {
     var loading = document.getElementById('loading');
-    var expJson = then[0];
+    var expJson = then[0];//object;
     var styleJson = then[1];
     var elements = expJson.elements;
 
@@ -48,6 +49,9 @@ $(function () {
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false
+      // layout: {
+        // name: 'dagre'
+      // }
     });
 
     mendData();
@@ -94,7 +98,7 @@ $(function () {
             }
           });
 
-          //.css({
+          // .css({
           //    'line-color': 'yellow'
           // });
         }
@@ -103,8 +107,8 @@ $(function () {
     }
 
     cy.endBatch(); //.autolock( true );
-    cy.edges()[0].selected(true);
-    console.log(cy.edges()[0].selected());
+    // cy.edges()[0].selected(true);
+    // console.log(cy.edges()[0].selected());
   }
 
   var start, end;
@@ -120,25 +124,30 @@ $(function () {
     start.addClass('start');
   }
 
+  var measure = "size";
+
   function selectEnd(node) {
     $body.addClass('has-end calc');
 
     end = node;
 
+    //TODO:start your algorithm
+
     cy.startBatch();
 
     end.addClass('end');
 
-    setTimeout(function () {
+    // setTimeout(function () {
       var aStar = cy.elements().aStar({
         root: start,
         goal: end,
+        directed: true,
         weight: function (e) {
-          if (e.data('is_walking')) {
-            return 0.25; // assume very little time to walk inside stn
+          var size = e.data('size');
+          if(size > 0) {
+            return size;
           }
-
-          return e.data('is_bullet') ? 1 : 3; // assume bullet is ~3x faster
+          return 1;
         }
       });
 
@@ -149,14 +158,20 @@ $(function () {
         cy.endBatch();
         return;
       }
+      for (var i = 0; i < aStar.path.length - 1; i++) {
+        var group = aStar.path[i].group();
+        if(group == "nodes") {
+          console.log(aStar.path[i].data('id'));
+        }
+      }
 
       cy.elements().not(aStar.path).addClass('not-path');
       aStar.path.addClass('path');
 
-      cy.endBatch(); true
+      cy.endBatch(); 
 
       $body.removeClass('calc');
-    }, 300);
+    // }, 300);
   }
 
   function clear() {
